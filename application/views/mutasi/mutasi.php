@@ -192,7 +192,7 @@
 
   }
   var initTableMutasi=()=>{
-    $("#tblMutasi").DataTable({"ordering":false,"processing": true,"serverSide": true,"paging":   true,"pagingType":'simple_numbers',fixedHeader: {header: true,headerOffset: $('.main-header').outerHeight()},"ajax": "<?= base_url('Mutasi/showMutasi') ?>"}).MakeCellsEditable({"onUpdate": mutasiUpdate,columns:[1,2]});  
+    $("#tblMutasi").DataTable({"scrollX": true,"ordering":false,"processing": true,"serverSide": true,"paging":   true,"pagingType":'simple_numbers',fixedHeader: {header: true,headerOffset: $('.main-header').outerHeight()},"ajax": "<?= base_url('Mutasi/showMutasi') ?>"}).MakeCellsEditable({"onUpdate": mutasiUpdate,columns:[1,2]});  
   };
   console.log($("#tblMutasi").find('tbody').find('td'));
 
